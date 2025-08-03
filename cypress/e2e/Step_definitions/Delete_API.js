@@ -33,4 +33,5 @@ Then(`the response status code should be {int}`, (arg0) => {
 cy.get('@apiResponse').then((response) => {
     expect(response.status).to.eq(arg0);
 });
+cy.log('test');
 });
